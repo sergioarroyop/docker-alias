@@ -1,0 +1,12 @@
+##############################
+#Docker and Docker swarm alias
+##############################
+
+#List all containers
+alias dka = docker ps -a
+
+# Images
+# List images
+alias dki = docker image ls
+# Delete images
+alias dkid = docker image rm
