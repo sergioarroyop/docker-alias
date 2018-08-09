@@ -1,12 +1,37 @@
-##############################
-#Docker and Docker swarm alias
-##############################
+###################################
+##Docker and Docker swarm aliases##
+###################################
 
-#List all containers
-alias dka = docker ps -a
+#-Containers-#
+# List containers
+alias dkl="docker ps"
+# List all containers (include stoped)
+alias dkla="docker ps -a"
+# Stop container
+alias dkstp="docker container stop"
+# Restart contaier
+alias dkrt="docker container restart"
+# Delete container
+alias dkdl="docker container rm"
+# List container ports
+alias dkp="docker port"
 
-# Images
+#-Images-#
 # List images
-alias dki = docker image ls
+alias dki="docker image ls"
 # Delete images
-alias dkid = docker image rm
+alias dkid="docker image rm"
+
+#-Inspect-#
+# Get container IP
+alias dkcip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+# Get container Mounts
+alias dkcv="docker inspect --format '{{ .Mounts }}'"
+# Get container Networks
+alias dkcn="docker inspect --format '{{ .NetworkSettings.Networks}}'"
+
+#-Build-#
+alias dkb="docker build -f $1 -t $2 ."
+
+#Docker Swarm - In progress
+
