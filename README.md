@@ -1,2 +1,2 @@
 # Docker and Docker swarm alias
-Some useful alias and functions for Docker and Docker Swarm.
+Some useful aliases for Docker and Docker Swarm.
