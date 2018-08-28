@@ -12,7 +12,7 @@ alias dkstp="docker container stop"
 # Restart contaier
 alias dkrt="docker container restart"
 # Delete container
-alias dkdl="docker container rm"
+alias dkrm="docker container rm"
 # List container ports
 alias dkp="docker port"
 
@@ -20,7 +20,7 @@ alias dkp="docker port"
 # List images
 alias dki="docker image ls"
 # Delete images
-alias dkid="docker image rm"
+alias dkirm="docker image rm"
 
 #-Inspect-#
 # Get container IP
