@@ -13,6 +13,8 @@ alias dkstp="docker container stop"
 alias dkrt="docker container restart"
 # Delete container
 alias dkrm="docker container rm"
+# Delete Exited and Created containers
+alias dkrma="docker container rm $(docker container ls -a | awk '/Exit|Creat/')"
 # List container ports
 alias dkp="docker port"
 
